@@ -1,0 +1,30 @@
+{
+  "name": "ts-generate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "exceljs": "^4.3.0",
+    "figlet": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.5",
+    "@types/node": "^18.15.11",
+    "@types/office-js": "^1.0.256",
+    "@types/office-runtime": "^1.0.23",
+    "office-addin-cli": "^1.5.5",
+    "office-addin-debugging": "^5.0.5",
+    "office-addin-dev-certs": "^1.11.3",
+    "office-addin-lint": "^2.2.5",
+    "office-addin-manifest": "^1.12.3",
+    "office-addin-prettier-config": "^1.2.0",
+    "typescript": "^5.0.4"
+  }
+}
