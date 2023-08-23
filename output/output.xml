@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on darwin)" generated="20230823 01:52:11.890" rpa="false" schemaversion="4">
+<suite id="s1" name="Output" source="/Users/antoniosferreira/Documents/College/Thesis/ts-generate/output">
+<suite id="s1-s1" name="PurchaseCart" source="/Users/antoniosferreira/Documents/College/Thesis/ts-generate/output/PurchaseCart.robot">
+<test id="s1-s1-t1" name="Template Purchase Cart" line="12">
+<kw name="Purchase Cart">
+<arg>W2aoIgYjO@sfhgp.mds</arg>
+<kw name="Open App" library="resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${APP_URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230823 01:52:11.942" level="INFO">Opening browser 'Chrome' to base url 'https://onlineboutique.dev'.</msg>
+<status status="PASS" starttime="20230823 01:52:11.942" endtime="20230823 01:52:13.997"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230823 01:52:13.997" endtime="20230823 01:52:14.449"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230823 01:52:14.449" endtime="20230823 01:52:14.449"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:11.942" endtime="20230823 01:52:14.449"/>
+</kw>
+<kw name="Click On Element Item1_element" library="resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[contains(@href,'${Item1_element}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:14.450" level="INFO">Clicking element '//a[contains(@href,'product/OLJCESPC7Z')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:14.450" endtime="20230823 01:52:14.648"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:14.449" endtime="20230823 01:52:14.648"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:14.649" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:14.648" endtime="20230823 01:52:14.994"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:14.648" endtime="20230823 01:52:14.994"/>
+</kw>
+<kw name="Write on email_field" library="resources">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${email_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:14.995" level="INFO">Typing text 'W2aoIgYjO@sfhgp.mds' into text field 'xpath=//input[contains(@name, 'email')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:14.995" endtime="20230823 01:52:15.079"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:14.994" endtime="20230823 01:52:15.079"/>
+</kw>
+<kw name="Write on street_field" library="resources">
+<arg>Avenida 5 de outubro</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${street_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:15.079" level="INFO">Typing text 'Avenida 5 de outubro' into text field 'xpath=//input[contains(@name, 'street_address')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:15.079" endtime="20230823 01:52:15.114"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.079" endtime="20230823 01:52:15.114"/>
+</kw>
+<kw name="Write on zip_field" library="resources">
+<arg>1234</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${zip_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:15.114" level="INFO">Typing text '1234' into text field 'xpath=//input[contains(@name, 'zip_code')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:15.114" endtime="20230823 01:52:15.144"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.114" endtime="20230823 01:52:15.144"/>
+</kw>
+<kw name="Write on city_field" library="resources">
+<arg>city</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${city_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:15.144" level="INFO">Typing text 'city' into text field 'xpath=//input[contains(@name, 'city')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:15.144" endtime="20230823 01:52:15.173"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.144" endtime="20230823 01:52:15.173"/>
+</kw>
+<kw name="Write on state_field" library="resources">
+<arg>state</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${state_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:15.173" level="INFO">Typing text 'state' into text field 'xpath=//input[contains(@name, 'state')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:15.173" endtime="20230823 01:52:15.203"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.173" endtime="20230823 01:52:15.203"/>
+</kw>
+<kw name="Write on country_field" library="resources">
+<arg>country</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${country_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:15.203" level="INFO">Typing text 'country' into text field 'xpath=//input[contains(@name, 'country')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:15.203" endtime="20230823 01:52:15.232"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.203" endtime="20230823 01:52:15.233"/>
+</kw>
+<kw name="Write on creditCard_field" library="resources">
+<arg>5454-3232-1234-9878</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${creditCard_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:15.233" level="INFO">Typing text '5454-3232-1234-9878' into text field 'xpath=//input[contains(@name, 'credit_card_number')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:15.233" endtime="20230823 01:52:15.265"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.233" endtime="20230823 01:52:15.265"/>
+</kw>
+<kw name="Write on cvv_field" library="resources">
+<arg>${cvv}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${cvv_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:15.265" level="INFO">Typing text '322' into text field 'xpath=//input[contains(@name, 'credit_card_cvv')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:15.265" endtime="20230823 01:52:15.296"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.265" endtime="20230823 01:52:15.296"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:15.297" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:15.297" endtime="20230823 01:52:15.504"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.296" endtime="20230823 01:52:15.504"/>
+</kw>
+<kw name="Check On Page purchaseConfirmation_page" library="resources">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${purchaseConfirmation_page}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230823 01:52:15.507" level="INFO">Current location is 'https://onlineboutique.dev/cart/checkout'.</msg>
+<status status="PASS" starttime="20230823 01:52:15.504" endtime="20230823 01:52:15.507"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.504" endtime="20230823 01:52:15.507"/>
+</kw>
+<kw name="Close App" library="resources">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230823 01:52:15.507" endtime="20230823 01:52:15.578"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.507" endtime="20230823 01:52:15.578"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:11.942" endtime="20230823 01:52:15.578"/>
+</kw>
+<kw name="Purchase Cart">
+<arg>jU-dK7hCx@pfqed.mlf</arg>
+<kw name="Open App" library="resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${APP_URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230823 01:52:15.579" level="INFO">Opening browser 'Chrome' to base url 'https://onlineboutique.dev'.</msg>
+<status status="PASS" starttime="20230823 01:52:15.579" endtime="20230823 01:52:17.682"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230823 01:52:17.682" endtime="20230823 01:52:17.787"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230823 01:52:17.787" endtime="20230823 01:52:17.788"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.579" endtime="20230823 01:52:17.788"/>
+</kw>
+<kw name="Click On Element Item1_element" library="resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[contains(@href,'${Item1_element}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:17.788" level="INFO">Clicking element '//a[contains(@href,'product/OLJCESPC7Z')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:17.788" endtime="20230823 01:52:17.964"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:17.788" endtime="20230823 01:52:17.964"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:17.964" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:17.964" endtime="20230823 01:52:18.302"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:17.964" endtime="20230823 01:52:18.302"/>
+</kw>
+<kw name="Write on email_field" library="resources">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${email_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:18.303" level="INFO">Typing text 'jU-dK7hCx@pfqed.mlf' into text field 'xpath=//input[contains(@name, 'email')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:18.302" endtime="20230823 01:52:18.404"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.302" endtime="20230823 01:52:18.404"/>
+</kw>
+<kw name="Write on street_field" library="resources">
+<arg>Avenida 5 de outubro</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${street_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:18.405" level="INFO">Typing text 'Avenida 5 de outubro' into text field 'xpath=//input[contains(@name, 'street_address')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:18.405" endtime="20230823 01:52:18.440"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.404" endtime="20230823 01:52:18.440"/>
+</kw>
+<kw name="Write on zip_field" library="resources">
+<arg>1234</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${zip_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:18.440" level="INFO">Typing text '1234' into text field 'xpath=//input[contains(@name, 'zip_code')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:18.440" endtime="20230823 01:52:18.469"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.440" endtime="20230823 01:52:18.469"/>
+</kw>
+<kw name="Write on city_field" library="resources">
+<arg>city</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${city_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:18.469" level="INFO">Typing text 'city' into text field 'xpath=//input[contains(@name, 'city')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:18.469" endtime="20230823 01:52:18.499"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.469" endtime="20230823 01:52:18.499"/>
+</kw>
+<kw name="Write on state_field" library="resources">
+<arg>state</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${state_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:18.499" level="INFO">Typing text 'state' into text field 'xpath=//input[contains(@name, 'state')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:18.499" endtime="20230823 01:52:18.528"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.499" endtime="20230823 01:52:18.528"/>
+</kw>
+<kw name="Write on country_field" library="resources">
+<arg>country</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${country_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:18.528" level="INFO">Typing text 'country' into text field 'xpath=//input[contains(@name, 'country')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:18.528" endtime="20230823 01:52:18.557"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.528" endtime="20230823 01:52:18.557"/>
+</kw>
+<kw name="Write on creditCard_field" library="resources">
+<arg>5454-3232-1234-9878</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${creditCard_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:18.558" level="INFO">Typing text '5454-3232-1234-9878' into text field 'xpath=//input[contains(@name, 'credit_card_number')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:18.558" endtime="20230823 01:52:18.589"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.557" endtime="20230823 01:52:18.589"/>
+</kw>
+<kw name="Write on cvv_field" library="resources">
+<arg>${cvv}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${cvv_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:18.589" level="INFO">Typing text '322' into text field 'xpath=//input[contains(@name, 'credit_card_cvv')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:18.589" endtime="20230823 01:52:18.619"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.589" endtime="20230823 01:52:18.619"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:18.619" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:18.619" endtime="20230823 01:52:18.809"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.619" endtime="20230823 01:52:18.809"/>
+</kw>
+<kw name="Check On Page purchaseConfirmation_page" library="resources">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${purchaseConfirmation_page}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230823 01:52:18.812" level="INFO">Current location is 'https://onlineboutique.dev/cart/checkout'.</msg>
+<status status="PASS" starttime="20230823 01:52:18.809" endtime="20230823 01:52:18.812"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.809" endtime="20230823 01:52:18.812"/>
+</kw>
+<kw name="Close App" library="resources">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230823 01:52:18.812" endtime="20230823 01:52:18.883"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.812" endtime="20230823 01:52:18.883"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:15.578" endtime="20230823 01:52:18.883"/>
+</kw>
+<kw name="Purchase Cart">
+<arg>ZlT2P.z1q@cvylt.xkw</arg>
+<kw name="Open App" library="resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${APP_URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230823 01:52:18.884" level="INFO">Opening browser 'Chrome' to base url 'https://onlineboutique.dev'.</msg>
+<status status="PASS" starttime="20230823 01:52:18.884" endtime="20230823 01:52:20.941"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230823 01:52:20.941" endtime="20230823 01:52:21.393"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230823 01:52:21.393" endtime="20230823 01:52:21.394"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.883" endtime="20230823 01:52:21.394"/>
+</kw>
+<kw name="Click On Element Item1_element" library="resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[contains(@href,'${Item1_element}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:21.394" level="INFO">Clicking element '//a[contains(@href,'product/OLJCESPC7Z')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:21.394" endtime="20230823 01:52:21.589"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:21.394" endtime="20230823 01:52:21.589"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:21.590" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:21.589" endtime="20230823 01:52:21.929"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:21.589" endtime="20230823 01:52:21.929"/>
+</kw>
+<kw name="Write on email_field" library="resources">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${email_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:21.930" level="INFO">Typing text 'ZlT2P.z1q@cvylt.xkw' into text field 'xpath=//input[contains(@name, 'email')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:21.930" endtime="20230823 01:52:22.029"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:21.929" endtime="20230823 01:52:22.029"/>
+</kw>
+<kw name="Write on street_field" library="resources">
+<arg>Avenida 5 de outubro</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${street_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:22.029" level="INFO">Typing text 'Avenida 5 de outubro' into text field 'xpath=//input[contains(@name, 'street_address')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:22.029" endtime="20230823 01:52:22.066"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.029" endtime="20230823 01:52:22.066"/>
+</kw>
+<kw name="Write on zip_field" library="resources">
+<arg>1234</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${zip_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:22.067" level="INFO">Typing text '1234' into text field 'xpath=//input[contains(@name, 'zip_code')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:22.066" endtime="20230823 01:52:22.095"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.066" endtime="20230823 01:52:22.095"/>
+</kw>
+<kw name="Write on city_field" library="resources">
+<arg>city</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${city_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:22.096" level="INFO">Typing text 'city' into text field 'xpath=//input[contains(@name, 'city')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:22.095" endtime="20230823 01:52:22.125"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.095" endtime="20230823 01:52:22.125"/>
+</kw>
+<kw name="Write on state_field" library="resources">
+<arg>state</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${state_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:22.125" level="INFO">Typing text 'state' into text field 'xpath=//input[contains(@name, 'state')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:22.125" endtime="20230823 01:52:22.154"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.125" endtime="20230823 01:52:22.154"/>
+</kw>
+<kw name="Write on country_field" library="resources">
+<arg>country</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${country_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:22.154" level="INFO">Typing text 'country' into text field 'xpath=//input[contains(@name, 'country')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:22.154" endtime="20230823 01:52:22.183"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.154" endtime="20230823 01:52:22.183"/>
+</kw>
+<kw name="Write on creditCard_field" library="resources">
+<arg>5454-3232-1234-9878</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${creditCard_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:22.183" level="INFO">Typing text '5454-3232-1234-9878' into text field 'xpath=//input[contains(@name, 'credit_card_number')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:22.183" endtime="20230823 01:52:22.214"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.183" endtime="20230823 01:52:22.214"/>
+</kw>
+<kw name="Write on cvv_field" library="resources">
+<arg>${cvv}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${cvv_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:22.214" level="INFO">Typing text '322' into text field 'xpath=//input[contains(@name, 'credit_card_cvv')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:22.214" endtime="20230823 01:52:22.242"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.214" endtime="20230823 01:52:22.242"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:22.242" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:22.242" endtime="20230823 01:52:22.438"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.242" endtime="20230823 01:52:22.438"/>
+</kw>
+<kw name="Check On Page purchaseConfirmation_page" library="resources">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${purchaseConfirmation_page}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230823 01:52:22.442" level="INFO">Current location is 'https://onlineboutique.dev/cart/checkout'.</msg>
+<status status="PASS" starttime="20230823 01:52:22.439" endtime="20230823 01:52:22.442"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.438" endtime="20230823 01:52:22.442"/>
+</kw>
+<kw name="Close App" library="resources">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230823 01:52:22.442" endtime="20230823 01:52:22.509"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.442" endtime="20230823 01:52:22.509"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:18.883" endtime="20230823 01:52:22.509"/>
+</kw>
+<tag>positive</tag>
+<status status="PASS" starttime="20230823 01:52:11.942" endtime="20230823 01:52:22.510"/>
+</test>
+<test id="s1-s1-t2" name="Template FailingPurchase Cart" line="19">
+<kw name="Purchase Cart Failure">
+<arg>qn9m}YhHZs?-`:}@:r@~}~z{z||.z{}~</arg>
+<kw name="Run Keyword And Expect Error" library="BuiltIn">
+<arg>*</arg>
+<arg>Purchase Cart</arg>
+<arg>${email}</arg>
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<kw name="Purchase Cart">
+<arg>${email}</arg>
+<kw name="Open App" library="resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${APP_URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230823 01:52:22.511" level="INFO">Opening browser 'Chrome' to base url 'https://onlineboutique.dev'.</msg>
+<status status="PASS" starttime="20230823 01:52:22.511" endtime="20230823 01:52:24.512"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230823 01:52:24.512" endtime="20230823 01:52:24.621"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230823 01:52:24.621" endtime="20230823 01:52:24.621"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.511" endtime="20230823 01:52:24.621"/>
+</kw>
+<kw name="Click On Element Item1_element" library="resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[contains(@href,'${Item1_element}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:24.621" level="INFO">Clicking element '//a[contains(@href,'product/OLJCESPC7Z')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:24.621" endtime="20230823 01:52:24.801"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:24.621" endtime="20230823 01:52:24.801"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:24.802" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:24.801" endtime="20230823 01:52:25.133"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:24.801" endtime="20230823 01:52:25.133"/>
+</kw>
+<kw name="Write on email_field" library="resources">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${email_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:25.133" level="INFO">Typing text 'qn9m}YhHZs?-`:}@:r@~}~z{z||.z{}~' into text field 'xpath=//input[contains(@name, 'email')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:25.133" endtime="20230823 01:52:25.233"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.133" endtime="20230823 01:52:25.233"/>
+</kw>
+<kw name="Write on street_field" library="resources">
+<arg>Avenida 5 de outubro</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${street_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:25.233" level="INFO">Typing text 'Avenida 5 de outubro' into text field 'xpath=//input[contains(@name, 'street_address')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:25.233" endtime="20230823 01:52:25.267"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.233" endtime="20230823 01:52:25.267"/>
+</kw>
+<kw name="Write on zip_field" library="resources">
+<arg>1234</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${zip_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:25.268" level="INFO">Typing text '1234' into text field 'xpath=//input[contains(@name, 'zip_code')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:25.267" endtime="20230823 01:52:25.296"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.267" endtime="20230823 01:52:25.296"/>
+</kw>
+<kw name="Write on city_field" library="resources">
+<arg>city</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${city_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:25.296" level="INFO">Typing text 'city' into text field 'xpath=//input[contains(@name, 'city')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:25.296" endtime="20230823 01:52:25.325"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.296" endtime="20230823 01:52:25.325"/>
+</kw>
+<kw name="Write on state_field" library="resources">
+<arg>state</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${state_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:25.325" level="INFO">Typing text 'state' into text field 'xpath=//input[contains(@name, 'state')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:25.325" endtime="20230823 01:52:25.353"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.325" endtime="20230823 01:52:25.353"/>
+</kw>
+<kw name="Write on country_field" library="resources">
+<arg>country</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${country_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:25.353" level="INFO">Typing text 'country' into text field 'xpath=//input[contains(@name, 'country')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:25.353" endtime="20230823 01:52:25.382"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.353" endtime="20230823 01:52:25.382"/>
+</kw>
+<kw name="Write on creditCard_field" library="resources">
+<arg>5454-3232-1234-9878</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${creditCard_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:25.382" level="INFO">Typing text '5454-3232-1234-9878' into text field 'xpath=//input[contains(@name, 'credit_card_number')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:25.382" endtime="20230823 01:52:25.413"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.382" endtime="20230823 01:52:25.413"/>
+</kw>
+<kw name="Write on cvv_field" library="resources">
+<arg>${cvv}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${cvv_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:25.413" level="INFO">Typing text '322' into text field 'xpath=//input[contains(@name, 'credit_card_cvv')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:25.413" endtime="20230823 01:52:25.442"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.413" endtime="20230823 01:52:25.442"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:25.443" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:25.442" endtime="20230823 01:52:25.469"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.442" endtime="20230823 01:52:25.469"/>
+</kw>
+<kw name="Check On Page purchaseConfirmation_page" library="resources">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${purchaseConfirmation_page}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230823 01:52:25.684" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230823 01:52:25.684" level="FAIL">Location should have been 'https://onlineboutique.dev/cart/checkout' but was 'https://onlineboutique.dev/cart'.</msg>
+<status status="FAIL" starttime="20230823 01:52:25.469" endtime="20230823 01:52:25.685"/>
+</kw>
+<status status="FAIL" starttime="20230823 01:52:25.469" endtime="20230823 01:52:25.685"/>
+</kw>
+<kw name="Close App" library="resources">
+<status status="NOT RUN" starttime="20230823 01:52:25.685" endtime="20230823 01:52:25.685"/>
+</kw>
+<status status="FAIL" starttime="20230823 01:52:22.510" endtime="20230823 01:52:25.685"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.510" endtime="20230823 01:52:25.685"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:22.510" endtime="20230823 01:52:25.685"/>
+</kw>
+<kw name="Purchase Cart Failure">
+<arg>Y~`FJntwxQlVX?fO`.@}||{}~z|}z.~~{~~}</arg>
+<kw name="Run Keyword And Expect Error" library="BuiltIn">
+<arg>*</arg>
+<arg>Purchase Cart</arg>
+<arg>${email}</arg>
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<kw name="Purchase Cart">
+<arg>${email}</arg>
+<kw name="Open App" library="resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${APP_URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230823 01:52:25.686" level="INFO">Opening browser 'Chrome' to base url 'https://onlineboutique.dev'.</msg>
+<status status="PASS" starttime="20230823 01:52:25.686" endtime="20230823 01:52:27.703"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230823 01:52:27.703" endtime="20230823 01:52:28.156"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230823 01:52:28.156" endtime="20230823 01:52:28.156"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.686" endtime="20230823 01:52:28.156"/>
+</kw>
+<kw name="Click On Element Item1_element" library="resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[contains(@href,'${Item1_element}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:28.157" level="INFO">Clicking element '//a[contains(@href,'product/OLJCESPC7Z')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:28.157" endtime="20230823 01:52:28.354"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:28.157" endtime="20230823 01:52:28.354"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:28.354" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:28.354" endtime="20230823 01:52:28.695"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:28.354" endtime="20230823 01:52:28.696"/>
+</kw>
+<kw name="Write on email_field" library="resources">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${email_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:28.696" level="INFO">Typing text 'Y~`FJntwxQlVX?fO`.@}||{}~z|}z.~~{~~}' into text field 'xpath=//input[contains(@name, 'email')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:28.696" endtime="20230823 01:52:28.791"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:28.696" endtime="20230823 01:52:28.791"/>
+</kw>
+<kw name="Write on street_field" library="resources">
+<arg>Avenida 5 de outubro</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${street_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:28.791" level="INFO">Typing text 'Avenida 5 de outubro' into text field 'xpath=//input[contains(@name, 'street_address')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:28.791" endtime="20230823 01:52:28.828"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:28.791" endtime="20230823 01:52:28.828"/>
+</kw>
+<kw name="Write on zip_field" library="resources">
+<arg>1234</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${zip_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:28.828" level="INFO">Typing text '1234' into text field 'xpath=//input[contains(@name, 'zip_code')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:28.828" endtime="20230823 01:52:28.859"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:28.828" endtime="20230823 01:52:28.859"/>
+</kw>
+<kw name="Write on city_field" library="resources">
+<arg>city</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${city_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:28.859" level="INFO">Typing text 'city' into text field 'xpath=//input[contains(@name, 'city')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:28.859" endtime="20230823 01:52:28.890"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:28.859" endtime="20230823 01:52:28.890"/>
+</kw>
+<kw name="Write on state_field" library="resources">
+<arg>state</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${state_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:28.890" level="INFO">Typing text 'state' into text field 'xpath=//input[contains(@name, 'state')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:28.890" endtime="20230823 01:52:28.921"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:28.890" endtime="20230823 01:52:28.921"/>
+</kw>
+<kw name="Write on country_field" library="resources">
+<arg>country</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${country_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:28.921" level="INFO">Typing text 'country' into text field 'xpath=//input[contains(@name, 'country')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:28.921" endtime="20230823 01:52:28.953"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:28.921" endtime="20230823 01:52:28.953"/>
+</kw>
+<kw name="Write on creditCard_field" library="resources">
+<arg>5454-3232-1234-9878</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${creditCard_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:28.953" level="INFO">Typing text '5454-3232-1234-9878' into text field 'xpath=//input[contains(@name, 'credit_card_number')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:28.953" endtime="20230823 01:52:28.986"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:28.953" endtime="20230823 01:52:28.986"/>
+</kw>
+<kw name="Write on cvv_field" library="resources">
+<arg>${cvv}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${cvv_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:28.987" level="INFO">Typing text '322' into text field 'xpath=//input[contains(@name, 'credit_card_cvv')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:28.986" endtime="20230823 01:52:29.018"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:28.986" endtime="20230823 01:52:29.019"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:29.019" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:29.019" endtime="20230823 01:52:29.046"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:29.019" endtime="20230823 01:52:29.046"/>
+</kw>
+<kw name="Check On Page purchaseConfirmation_page" library="resources">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${purchaseConfirmation_page}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230823 01:52:29.362" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230823 01:52:29.362" level="FAIL">Location should have been 'https://onlineboutique.dev/cart/checkout' but was 'https://onlineboutique.dev/cart'.</msg>
+<status status="FAIL" starttime="20230823 01:52:29.047" endtime="20230823 01:52:29.362"/>
+</kw>
+<status status="FAIL" starttime="20230823 01:52:29.047" endtime="20230823 01:52:29.363"/>
+</kw>
+<kw name="Close App" library="resources">
+<status status="NOT RUN" starttime="20230823 01:52:29.363" endtime="20230823 01:52:29.363"/>
+</kw>
+<status status="FAIL" starttime="20230823 01:52:25.686" endtime="20230823 01:52:29.363"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.685" endtime="20230823 01:52:29.363"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:25.685" endtime="20230823 01:52:29.363"/>
+</kw>
+<kw name="Purchase Cart Failure">
+<arg>{CjYKQoqrgsjTO|nE=@}z}}}z||}}.z{~~{~</arg>
+<kw name="Run Keyword And Expect Error" library="BuiltIn">
+<arg>*</arg>
+<arg>Purchase Cart</arg>
+<arg>${email}</arg>
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<kw name="Purchase Cart">
+<arg>${email}</arg>
+<kw name="Open App" library="resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${APP_URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230823 01:52:29.363" level="INFO">Opening browser 'Chrome' to base url 'https://onlineboutique.dev'.</msg>
+<status status="PASS" starttime="20230823 01:52:29.363" endtime="20230823 01:52:31.435"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230823 01:52:31.435" endtime="20230823 01:52:31.885"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230823 01:52:31.885" endtime="20230823 01:52:31.885"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:29.363" endtime="20230823 01:52:31.885"/>
+</kw>
+<kw name="Click On Element Item1_element" library="resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[contains(@href,'${Item1_element}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:31.886" level="INFO">Clicking element '//a[contains(@href,'product/OLJCESPC7Z')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:31.886" endtime="20230823 01:52:32.083"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:31.886" endtime="20230823 01:52:32.083"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:32.083" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:32.083" endtime="20230823 01:52:32.439"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:32.083" endtime="20230823 01:52:32.439"/>
+</kw>
+<kw name="Write on email_field" library="resources">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${email_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:32.440" level="INFO">Typing text '{CjYKQoqrgsjTO|nE=@}z}}}z||}}.z{~~{~' into text field 'xpath=//input[contains(@name, 'email')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:32.440" endtime="20230823 01:52:32.543"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:32.440" endtime="20230823 01:52:32.543"/>
+</kw>
+<kw name="Write on street_field" library="resources">
+<arg>Avenida 5 de outubro</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${street_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:32.543" level="INFO">Typing text 'Avenida 5 de outubro' into text field 'xpath=//input[contains(@name, 'street_address')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:32.543" endtime="20230823 01:52:32.581"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:32.543" endtime="20230823 01:52:32.582"/>
+</kw>
+<kw name="Write on zip_field" library="resources">
+<arg>1234</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${zip_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:32.582" level="INFO">Typing text '1234' into text field 'xpath=//input[contains(@name, 'zip_code')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:32.582" endtime="20230823 01:52:32.615"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:32.582" endtime="20230823 01:52:32.615"/>
+</kw>
+<kw name="Write on city_field" library="resources">
+<arg>city</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${city_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:32.615" level="INFO">Typing text 'city' into text field 'xpath=//input[contains(@name, 'city')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:32.615" endtime="20230823 01:52:32.648"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:32.615" endtime="20230823 01:52:32.648"/>
+</kw>
+<kw name="Write on state_field" library="resources">
+<arg>state</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${state_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:32.649" level="INFO">Typing text 'state' into text field 'xpath=//input[contains(@name, 'state')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:32.649" endtime="20230823 01:52:32.681"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:32.649" endtime="20230823 01:52:32.681"/>
+</kw>
+<kw name="Write on country_field" library="resources">
+<arg>country</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${country_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:32.681" level="INFO">Typing text 'country' into text field 'xpath=//input[contains(@name, 'country')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:32.681" endtime="20230823 01:52:32.713"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:32.681" endtime="20230823 01:52:32.713"/>
+</kw>
+<kw name="Write on creditCard_field" library="resources">
+<arg>5454-3232-1234-9878</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${creditCard_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:32.714" level="INFO">Typing text '5454-3232-1234-9878' into text field 'xpath=//input[contains(@name, 'credit_card_number')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:32.713" endtime="20230823 01:52:32.747"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:32.713" endtime="20230823 01:52:32.748"/>
+</kw>
+<kw name="Write on cvv_field" library="resources">
+<arg>${cvv}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[contains(@name, '${cvv_field}')]</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:32.748" level="INFO">Typing text '322' into text field 'xpath=//input[contains(@name, 'credit_card_cvv')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:32.748" endtime="20230823 01:52:32.781"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:32.748" endtime="20230823 01:52:32.781"/>
+</kw>
+<kw name="Click On Button submit_button" library="resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, '${submit_button}')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230823 01:52:32.782" level="INFO">Clicking button 'xpath=//button[contains(@class, 'cymbal-button-primary')]'.</msg>
+<status status="PASS" starttime="20230823 01:52:32.782" endtime="20230823 01:52:32.811"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:32.781" endtime="20230823 01:52:32.811"/>
+</kw>
+<kw name="Check On Page purchaseConfirmation_page" library="resources">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${purchaseConfirmation_page}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230823 01:52:33.103" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230823 01:52:33.103" level="FAIL">Location should have been 'https://onlineboutique.dev/cart/checkout' but was 'https://onlineboutique.dev/cart'.</msg>
+<status status="FAIL" starttime="20230823 01:52:32.811" endtime="20230823 01:52:33.103"/>
+</kw>
+<status status="FAIL" starttime="20230823 01:52:32.811" endtime="20230823 01:52:33.104"/>
+</kw>
+<kw name="Close App" library="resources">
+<status status="NOT RUN" starttime="20230823 01:52:33.104" endtime="20230823 01:52:33.104"/>
+</kw>
+<status status="FAIL" starttime="20230823 01:52:29.363" endtime="20230823 01:52:33.104"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:29.363" endtime="20230823 01:52:33.104"/>
+</kw>
+<status status="PASS" starttime="20230823 01:52:29.363" endtime="20230823 01:52:33.104"/>
+</kw>
+<tag>positive</tag>
+<status status="PASS" starttime="20230823 01:52:22.510" endtime="20230823 01:52:33.104"/>
+</test>
+<doc>A test suite for Purchase Cart</doc>
+<status status="PASS" starttime="20230823 01:52:11.896" endtime="20230823 01:52:33.104"/>
+</suite>
+<status status="PASS" starttime="20230823 01:52:11.890" endtime="20230823 01:52:33.104"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">positive</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Output">Output</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="PurchaseCart">Output.PurchaseCart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
